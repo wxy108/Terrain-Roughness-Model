@@ -65,9 +65,7 @@ Quick installation check on CPU, using the exact flat control:
 terrain-roughness data/heightmaps/libo_x0p00.npz --wave 3 --device cpu
 ```
 
-Expected roughness is `0.00000000 deg`. For a complete nonflat example, run:
-
-Run from the cloned repository:
+Expected roughness is `0.00000000 deg`. Run the complete nonflat example from the cloned repository:
 
 ```bash
 python examples/basic_usage.py
@@ -141,20 +139,23 @@ There is no interpolation to an unsupported wave number. The foot-coordinate ban
 
 ## Metric
 
-For stance feet $i,j$, let $d_{ij}$ be their horizontal separation and $\Delta h_{ij}$ their sampled terrain-height difference. The pair angle is
+For stance feet $`i,j`$, let $`d_{ij}`$ be their horizontal separation and $`\Delta h_{ij}`$ their sampled terrain-height difference. The pair angle is
 
-$$
-\beta_{ij}=\arctan\!\left(\frac{|\Delta h_{ij}|}{d_{ij}}\right).
-$$
+```math
+\beta_{ij}=\arctan\left(\frac{|\Delta h_{ij}|}{d_{ij}}\right).
+```
 
 The output is
 
-$$
-R_g=\frac{180}{\pi}\sqrt{\left\langle\frac{1}{M}\sum_{i<j}\beta_{ij}^{\,2}\right\rangle_{\mathbf{x},\phi,\theta}},
-\qquad M=\frac{N(N-1)}{2}.
-$$
+```math
+\begin{aligned}
+R_g &= \frac{180}{\pi}
+\sqrt{\left\langle \frac{1}{M}\sum_{i<j}\beta_{ij}^{2} \right\rangle_{\mathbf{x},\phi,\theta}},\\
+M &= \frac{N(N-1)}{2}.
+\end{aligned}
+```
 
-Here $N$ is the number of stance feet, $\mathbf{x}$ is translation, $\phi$ is cycle phase and $\theta$ is heading. The square root follows all averaging. [The method document](docs/METHOD.md) defines interpolation, valid bounds, weighting and the convolution analogy in detail.
+Here $`N`$ is the number of stance feet, $`\mathbf{x}`$ is translation, $`\phi`$ is cycle phase and $`\theta`$ is heading. The square root follows all averaging. [The method document](docs/METHOD.md) defines interpolation, valid bounds, weighting and the convolution analogy in detail.
 
 ## Tests and reproduction
 
