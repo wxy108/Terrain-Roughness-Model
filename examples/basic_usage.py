@@ -5,8 +5,8 @@ import torch
 from terrain_roughness import calculate_roughness
 
 ROOT = Path(__file__).resolve().parents[1]
-# Many small CPU tensor operations are faster with one thread on the tested
-# machine. This example setting changes execution resources, not the metric.
+# Use one CPU thread for reproducible CPU resource settings. This example
+# setting changes execution resources, not the metric.
 torch.set_num_threads(1)
 with np.load(ROOT / "data/heightmaps/libo_x1p00.npz", allow_pickle=False) as terrain:
     result = calculate_roughness(

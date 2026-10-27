@@ -59,6 +59,14 @@ These recipes use PyTorch 2.7.0, following the [official previous-version instal
 
 ## First calculation
 
+Quick installation check on CPU, using the exact flat control:
+
+```bash
+terrain-roughness data/heightmaps/libo_x0p00.npz --wave 3 --device cpu
+```
+
+Expected roughness is `0.00000000 deg`. For a complete nonflat example, run:
+
 Run from the cloned repository:
 
 ```bash
@@ -78,6 +86,8 @@ terrain-roughness data/heightmaps/libo_x1p00.npz --wave 3 --segments 19
 ```
 
 Use `--device cpu` to select CPU explicitly. The library otherwise selects CUDA when available. The CLI and basic example use one CPU thread; `--cpu-threads` changes the CLI setting. The library does not change the caller's global thread setting. Large full scans are faster on GPU.
+
+The full nonflat CPU example exceeded a 180-second screening limit on the publication machine, both at the default thread count and with one CPU thread. Its full CPU result was not validated within that time budget. CPU analytic/installation checks passed; the complete 300-condition re-evaluation used CUDA. Use the flat command above for a quick CPU smoke test and GPU for the complete scan.
 
 ## Height-map inputs
 

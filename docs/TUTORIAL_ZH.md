@@ -42,6 +42,14 @@ python -m pip install -e . --no-deps
 
 ## 2. 先运行已有实例
 
+先用平地做快速安装检查，预期为 0 度：
+
+```bash
+terrain-roughness data/heightmaps/libo_x0p00.npz --wave 3 --device cpu
+```
+
+完整的非平地实例：
+
 ```bash
 python examples/basic_usage.py
 ```
@@ -59,6 +67,8 @@ terrain-roughness data/heightmaps/libo_x1p00.npz --wave 3 --segments 19
 ```
 
 程序读取 NPZ 内的实际网格间距和坐标原点。默认优先用可用 GPU；加 `--device cpu` 可选择 CPU。
+
+完整非平地扫描计算量很大。本机全新 CPU 环境的该实例在默认线程数和单线程设置下都超过了 180 秒的短测上限，因此未在该时限内验证其完整 CPU 输出。CPU 的解析测试和安装检查通过，全部 300 条件的完整复算使用 CUDA 完成。快速验证用上面的平地命令，完整扫描建议用 GPU。
 
 ## 3. 在 Python 中调用
 
