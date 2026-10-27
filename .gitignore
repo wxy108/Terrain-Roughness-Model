@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+torch_compile_cache/
+triton_cache/
+.coverage
+htmlcov/
+runs/
+.env
+.env.*
+!.env.example

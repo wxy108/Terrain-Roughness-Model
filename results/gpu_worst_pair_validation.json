@@ -1,0 +1,9 @@
+{
+  "case": {
+    "N": 15,
+    "wave": 1.5,
+    "kernel": 1086,
+    "distance_mm": 0.006991207307293211
+  },
+  "max_independent_cpu_difference_deg": 3.108180948174777e-07
+}

@@ -1,0 +1,347 @@
+{
+  "complete": true,
+  "condition_count": 300,
+  "kernel_count": 54000,
+  "positions_per_kernel": 36300,
+  "elapsed_including_inputs_verification_writing_s": 355.52888680000024,
+  "device": "cuda",
+  "torch": "2.7.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "compiled": false,
+  "height_scaling_max_error_m": 4.336808689942018e-19,
+  "checks": [
+    {
+      "segments": 11,
+      "wave": 1.5,
+      "max_kernel_difference_deg": 1.4875212173137697e-11,
+      "max_final_difference_deg": 2.3092638912203256e-14
+    },
+    {
+      "segments": 11,
+      "wave": 2.0,
+      "max_kernel_difference_deg": 1.3301360013429075e-11,
+      "max_final_difference_deg": 2.842170943040401e-14
+    },
+    {
+      "segments": 11,
+      "wave": 2.5,
+      "max_kernel_difference_deg": 1.3308465440786676e-11,
+      "max_final_difference_deg": 2.4868995751603507e-14
+    },
+    {
+      "segments": 11,
+      "wave": 3.0,
+      "max_kernel_difference_deg": 1.573496888340742e-11,
+      "max_final_difference_deg": 2.842170943040401e-14
+    },
+    {
+      "segments": 11,
+      "wave": 3.5,
+      "max_kernel_difference_deg": 6.830092047493963e-12,
+      "max_final_difference_deg": 2.1316282072803006e-14
+    },
+    {
+      "segments": 11,
+      "wave": 4.0,
+      "max_kernel_difference_deg": 1.0462741784067475e-11,
+      "max_final_difference_deg": 2.1316282072803006e-14
+    },
+    {
+      "segments": 13,
+      "wave": 1.5,
+      "max_kernel_difference_deg": 1.1425527191022411e-11,
+      "max_final_difference_deg": 2.842170943040401e-14
+    },
+    {
+      "segments": 13,
+      "wave": 2.0,
+      "max_kernel_difference_deg": 1.1578293879210833e-11,
+      "max_final_difference_deg": 3.197442310920451e-14
+    },
+    {
+      "segments": 13,
+      "wave": 2.5,
+      "max_kernel_difference_deg": 1.269029326067539e-11,
+      "max_final_difference_deg": 1.5987211554602254e-14
+    },
+    {
+      "segments": 13,
+      "wave": 3.0,
+      "max_kernel_difference_deg": 9.611866857994755e-12,
+      "max_final_difference_deg": 1.0658141036401503e-14
+    },
+    {
+      "segments": 13,
+      "wave": 3.5,
+      "max_kernel_difference_deg": 8.43414227347239e-12,
+      "max_final_difference_deg": 1.7763568394002505e-14
+    },
+    {
+      "segments": 13,
+      "wave": 4.0,
+      "max_kernel_difference_deg": 1.0340173162148858e-11,
+      "max_final_difference_deg": 1.5987211554602254e-14
+    },
+    {
+      "segments": 15,
+      "wave": 1.5,
+      "max_kernel_difference_deg": 1.0022205287896213e-11,
+      "max_final_difference_deg": 3.552713678800501e-14
+    },
+    {
+      "segments": 15,
+      "wave": 2.0,
+      "max_kernel_difference_deg": 1.3567813539339113e-11,
+      "max_final_difference_deg": 4.263256414560601e-14
+    },
+    {
+      "segments": 15,
+      "wave": 2.5,
+      "max_kernel_difference_deg": 8.43769498715119e-12,
+      "max_final_difference_deg": 2.1316282072803006e-14
+    },
+    {
+      "segments": 15,
+      "wave": 3.0,
+      "max_kernel_difference_deg": 8.149925179168349e-12,
+      "max_final_difference_deg": 3.907985046680551e-14
+    },
+    {
+      "segments": 15,
+      "wave": 3.5,
+      "max_kernel_difference_deg": 9.00612917575927e-12,
+      "max_final_difference_deg": 1.5987211554602254e-14
+    },
+    {
+      "segments": 15,
+      "wave": 4.0,
+      "max_kernel_difference_deg": 8.485656621814996e-12,
+      "max_final_difference_deg": 1.0658141036401503e-14
+    },
+    {
+      "segments": 17,
+      "wave": 1.5,
+      "max_kernel_difference_deg": 9.304557124778512e-12,
+      "max_final_difference_deg": 2.4868995751603507e-14
+    },
+    {
+      "segments": 17,
+      "wave": 2.0,
+      "max_kernel_difference_deg": 8.611777957412414e-12,
+      "max_final_difference_deg": 4.618527782440651e-14
+    },
+    {
+      "segments": 17,
+      "wave": 2.5,
+      "max_kernel_difference_deg": 9.610090501155355e-12,
+      "max_final_difference_deg": 2.1316282072803006e-14
+    },
+    {
+      "segments": 17,
+      "wave": 3.0,
+      "max_kernel_difference_deg": 8.554934538551606e-12,
+      "max_final_difference_deg": 1.4210854715202004e-14
+    },
+    {
+      "segments": 17,
+      "wave": 3.5,
+      "max_kernel_difference_deg": 6.9260153168215766e-12,
+      "max_final_difference_deg": 2.1316282072803006e-14
+    },
+    {
+      "segments": 17,
+      "wave": 4.0,
+      "max_kernel_difference_deg": 7.208456054286216e-12,
+      "max_final_difference_deg": 1.7763568394002505e-14
+    },
+    {
+      "segments": 19,
+      "wave": 1.5,
+      "max_kernel_difference_deg": 5.801581437481218e-12,
+      "max_final_difference_deg": 6.394884621840902e-14
+    },
+    {
+      "segments": 19,
+      "wave": 2.0,
+      "max_kernel_difference_deg": 6.547651310029323e-12,
+      "max_final_difference_deg": 5.684341886080802e-14
+    },
+    {
+      "segments": 19,
+      "wave": 2.5,
+      "max_kernel_difference_deg": 6.265210572564683e-12,
+      "max_final_difference_deg": 3.019806626980426e-14
+    },
+    {
+      "segments": 19,
+      "wave": 3.0,
+      "max_kernel_difference_deg": 6.071587677070056e-12,
+      "max_final_difference_deg": 1.4210854715202004e-14
+    },
+    {
+      "segments": 19,
+      "wave": 3.5,
+      "max_kernel_difference_deg": 6.756373238658853e-12,
+      "max_final_difference_deg": 3.907985046680551e-14
+    },
+    {
+      "segments": 19,
+      "wave": 4.0,
+      "max_kernel_difference_deg": 6.9038108563290734e-12,
+      "max_final_difference_deg": 3.552713678800501e-14
+    }
+  ],
+  "timings": [
+    {
+      "segments": 11,
+      "wave": 1.5,
+      "scan_including_first_compile_s": 4.812482299999829
+    },
+    {
+      "segments": 11,
+      "wave": 2.0,
+      "scan_including_first_compile_s": 4.3575942000002215
+    },
+    {
+      "segments": 11,
+      "wave": 2.5,
+      "scan_including_first_compile_s": 9.71329390000028
+    },
+    {
+      "segments": 11,
+      "wave": 3.0,
+      "scan_including_first_compile_s": 8.8542266999998
+    },
+    {
+      "segments": 11,
+      "wave": 3.5,
+      "scan_including_first_compile_s": 8.980356799999754
+    },
+    {
+      "segments": 11,
+      "wave": 4.0,
+      "scan_including_first_compile_s": 10.686227499999859
+    },
+    {
+      "segments": 13,
+      "wave": 1.5,
+      "scan_including_first_compile_s": 6.999253099999805
+    },
+    {
+      "segments": 13,
+      "wave": 2.0,
+      "scan_including_first_compile_s": 6.9968816000000515
+    },
+    {
+      "segments": 13,
+      "wave": 2.5,
+      "scan_including_first_compile_s": 6.522630399999798
+    },
+    {
+      "segments": 13,
+      "wave": 3.0,
+      "scan_including_first_compile_s": 6.977664999999888
+    },
+    {
+      "segments": 13,
+      "wave": 3.5,
+      "scan_including_first_compile_s": 6.9385394999999335
+    },
+    {
+      "segments": 13,
+      "wave": 4.0,
+      "scan_including_first_compile_s": 6.871033499999612
+    },
+    {
+      "segments": 15,
+      "wave": 1.5,
+      "scan_including_first_compile_s": 11.095007100000203
+    },
+    {
+      "segments": 15,
+      "wave": 2.0,
+      "scan_including_first_compile_s": 10.869958100000076
+    },
+    {
+      "segments": 15,
+      "wave": 2.5,
+      "scan_including_first_compile_s": 10.944904299999962
+    },
+    {
+      "segments": 15,
+      "wave": 3.0,
+      "scan_including_first_compile_s": 10.594024300000001
+    },
+    {
+      "segments": 15,
+      "wave": 3.5,
+      "scan_including_first_compile_s": 10.832041000000117
+    },
+    {
+      "segments": 15,
+      "wave": 4.0,
+      "scan_including_first_compile_s": 10.921950999999808
+    },
+    {
+      "segments": 17,
+      "wave": 1.5,
+      "scan_including_first_compile_s": 14.610229400000208
+    },
+    {
+      "segments": 17,
+      "wave": 2.0,
+      "scan_including_first_compile_s": 14.10935019999988
+    },
+    {
+      "segments": 17,
+      "wave": 2.5,
+      "scan_including_first_compile_s": 14.087798900000053
+    },
+    {
+      "segments": 17,
+      "wave": 3.0,
+      "scan_including_first_compile_s": 15.181924299999991
+    },
+    {
+      "segments": 17,
+      "wave": 3.5,
+      "scan_including_first_compile_s": 15.03715370000009
+    },
+    {
+      "segments": 17,
+      "wave": 4.0,
+      "scan_including_first_compile_s": 14.564014999999927
+    },
+    {
+      "segments": 19,
+      "wave": 1.5,
+      "scan_including_first_compile_s": 18.55277729999989
+    },
+    {
+      "segments": 19,
+      "wave": 2.0,
+      "scan_including_first_compile_s": 18.82731079999985
+    },
+    {
+      "segments": 19,
+      "wave": 2.5,
+      "scan_including_first_compile_s": 18.670966899999712
+    },
+    {
+      "segments": 19,
+      "wave": 3.0,
+      "scan_including_first_compile_s": 18.857467899999847
+    },
+    {
+      "segments": 19,
+      "wave": 3.5,
+      "scan_including_first_compile_s": 18.4021915000003
+    },
+    {
+      "segments": 19,
+      "wave": 4.0,
+      "scan_including_first_compile_s": 19.003570899999886
+    }
+  ],
+  "timing_note": "Eager Torch CUDA correctness run. Includes input loading, verification and writing; some independent publication checks ran concurrently. This is not a paired performance benchmark."
+}

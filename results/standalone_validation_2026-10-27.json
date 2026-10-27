@@ -1,0 +1,106 @@
+{
+  "complete": true,
+  "tests": [
+    {
+      "check": "triangle_interpolation",
+      "value_deg": 45.00000151214888,
+      "expected_deg": 45.0,
+      "difference_deg": 1.5121488772251723e-06
+    },
+    {
+      "check": "analytic_plane_cpu_chunked",
+      "value_deg": 5.812982645163856,
+      "expected_deg": 5.812982613696406,
+      "difference_deg": 3.146745086723968e-08
+    },
+    {
+      "check": "analytic_plane_cuda_offset_and_other_chunks",
+      "value_deg": 5.812982823814826,
+      "expected_deg": 5.812982613696406,
+      "difference_deg": 2.1011842044060813e-07
+    },
+    {
+      "check": "flat_control",
+      "value_deg": 0.0,
+      "expected_deg": 0.0,
+      "difference_deg": 0.0
+    },
+    {
+      "check": "missing_physical_spacing",
+      "rejected": true
+    },
+    {
+      "check": "unsupported_wave",
+      "rejected": true
+    },
+    {
+      "check": "nonfinite_height",
+      "rejected": true
+    },
+    {
+      "check": "too_small_domain",
+      "rejected": true
+    },
+    {
+      "check": "noninteger_segments",
+      "rejected": true
+    },
+    {
+      "check": "complete_saved_terrain_regression",
+      "value_deg": 9.434472285814895,
+      "expected_deg": 9.43447228581486,
+      "difference_deg": 3.552713678800501e-14,
+      "N": 19,
+      "wave": 3.0,
+      "height_scale": 1.0,
+      "elapsed_s": 5.806534599999964
+    },
+    {
+      "check": "complete_saved_terrain_regression",
+      "value_deg": 3.054661908768061,
+      "expected_deg": 3.054661908768057,
+      "difference_deg": 3.9968028886505635e-15,
+      "N": 11,
+      "wave": 1.5,
+      "height_scale": 0.25,
+      "elapsed_s": 1.7919516000000613
+    },
+    {
+      "check": "complete_saved_terrain_regression",
+      "value_deg": 21.721112752399236,
+      "expected_deg": 21.721112752294278,
+      "difference_deg": 1.049578202128032e-10,
+      "N": 15,
+      "wave": 1.5,
+      "height_scale": 2.25,
+      "elapsed_s": 3.578409699999952
+    },
+    {
+      "check": "optional_compiled_full_scan",
+      "value_deg": 9.434472309994435,
+      "expected_deg": 9.43447228581486,
+      "difference_deg": 2.4179575675020715e-08,
+      "elapsed_including_compile_s": 18.34054089999995,
+      "compiler": "Existing project-local Triton Windows 3.3.1; caller explicitly configured compiler path."
+    }
+  ],
+  "protocol": "50 phases, 36 headings, common valid domain across all 30 saved configurations; stance-only unordered pairs; atan squared, pooled before root.",
+  "source_geometry_sha256": "5a9b4956266dbe704826826a161c9a0e93052ae8edffdd8a15e4b717002d3864",
+  "tolerance_deg": 1e-05,
+  "torch": "2.7.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "deliverable_files": {
+    "terrain_roughness.py": {
+      "bytes": 10402,
+      "sha256": "7111a1df76112976a3e84d9db20e2cc30367d78c6a54a02b273e7c522ff55116"
+    },
+    "gait_bank.npz": {
+      "bytes": 694029,
+      "sha256": "dc07d6fbb511e420191bfc8fd05bfdbd77c4b85bf9e64cd22ef8c9c45edb8bef"
+    },
+    "example.py": {
+      "bytes": 1845,
+      "sha256": "31e379bbfe7d218b41c3f9d568354c344c2253756f704e98172b0d1cb27edaf6"
+    }
+  }
+}

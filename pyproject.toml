@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terrain-roughness-model"
+version = "0.1.0"
+description = "Gait-conditioned terrain roughness from sparse contact geometry and complete-graph pair-angle RMS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "torch>=2.7,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+plots = ["matplotlib>=3.8,<4"]
+
+[project.scripts]
+terrain-roughness = "terrain_roughness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+terrain_roughness = ["gait_bank.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: complete real-terrain scans; enable with --run-slow", "compiled: requires configured CUDA compiler; enable with --run-compiled"]

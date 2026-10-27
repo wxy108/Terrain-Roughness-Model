@@ -1,0 +1,248 @@
+{
+  "site": "Libo",
+  "height_units": "meters",
+  "xy_units": "meters",
+  "row_direction": "+y",
+  "column_direction": "+x",
+  "interpolation": "Square cells split along lower-left to upper-right diagonal; piecewise linear triangles.",
+  "terrain_bounds_m": [
+    -0.223,
+    0.321,
+    -0.353,
+    0.081
+  ],
+  "nominal_cutoff_mm": 4.0,
+  "description": "The exact native-grid crop used by the 50-phase x 36-heading study. Nine nonflat arrays are cropped from their individually hash-verified original fields, not regenerated or quantized.",
+  "full_base": {
+    "path": "data/source/libo_base_full.npz",
+    "sha256": "4ac46df511d99a62ca42b17284a2c9c9809269c1f41dbf0784051ef7567ab7eb",
+    "shape": [
+      2045,
+      2045
+    ],
+    "origin_xy_m": [
+      -0.511,
+      -0.511
+    ],
+    "spacing_m": 0.0005,
+    "original_source_filename": "libo_restore4.npz",
+    "description": "Original unmodified parent base field, including the region outside the simulated terrain. It is provided for provenance and height-scale reconstruction; published study scans use the crop."
+  },
+  "records": [
+    {
+      "path": "data/heightmaps/libo_x0p00.npz",
+      "height_scale": 0.0,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "96e974c625a891fcc1e2ac3ff9ff2644fd8acab7a5e861df953632289f4b826a",
+      "bytes": 8564,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "reference_roughness_deg": 0.0,
+      "source": "Analytic constant-height control."
+    },
+    {
+      "path": "data/heightmaps/libo_x0p25.npz",
+      "height_scale": 0.25,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "cece569fd088abfe0bd2658d355d51acf0d82291c7278e7ddc3c0c3d8d245c6a",
+      "bytes": 7255494,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_height_x0p25.npz",
+      "source_full_field_sha256": "abfb05ac520ad9fdd95ee0e00a48da0ff16cd85c8268a0954356a3f48ecc596c",
+      "reference_roughness_deg": 2.2563637117410784
+    },
+    {
+      "path": "data/heightmaps/libo_x0p50.npz",
+      "height_scale": 0.5,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "0018d073835aeb72857a39219e61ea88e3101c364dd405be012708b9f0bec8f5",
+      "bytes": 7247306,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_height_x0p50.npz",
+      "source_full_field_sha256": "732ef7e4a08ff63fe354f72c858dbb3b39993ff866126f57f1e102669ce606d1",
+      "reference_roughness_deg": 4.47440857201165
+    },
+    {
+      "path": "data/heightmaps/libo_x0p75.npz",
+      "height_scale": 0.75,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "3ec28575eb6060003c4fca220002abc98a7832f6eee1068a4257d1ea7d2851dc",
+      "bytes": 7248900,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_height_x0p75.npz",
+      "source_full_field_sha256": "a6e241f3ce648c1232cf634868bb68c9d706e48ed11d06c32f47122efa7a9f06",
+      "reference_roughness_deg": 6.625283832017141
+    },
+    {
+      "path": "data/heightmaps/libo_x1p00.npz",
+      "height_scale": 1.0,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "f6754381ddd2030db3d9746c31f36a871ef69530adfcad28f0f70bcd2f890c8f",
+      "bytes": 7244823,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_restore4.npz",
+      "source_full_field_sha256": "4ac46df511d99a62ca42b17284a2c9c9809269c1f41dbf0784051ef7567ab7eb",
+      "reference_roughness_deg": 8.691882080548407
+    },
+    {
+      "path": "data/heightmaps/libo_x1p25.npz",
+      "height_scale": 1.25,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "f6dc2f7e4480f85089e49f9d16bd88dd9f1184415c8fd816488d3805da074976",
+      "bytes": 7248747,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_height_x1p25.npz",
+      "source_full_field_sha256": "1d057ba40cf8045999ae80f5c50412eeaf5e4f4f3b5e97a83166884f912d35e0",
+      "reference_roughness_deg": 10.666247531087212
+    },
+    {
+      "path": "data/heightmaps/libo_x1p50.npz",
+      "height_scale": 1.5,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "7e3d0e8762863943dbef50768c636b345cae369fa00b5b4219f2883c2dda1e31",
+      "bytes": 7246726,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_height_x1p50.npz",
+      "source_full_field_sha256": "83c189dc2c2905f5c26bfb738dc6f2b74eb5be1dd91b85594e0d93d945294358",
+      "reference_roughness_deg": 12.546335522967615
+    },
+    {
+      "path": "data/heightmaps/libo_x1p75.npz",
+      "height_scale": 1.75,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "2a3cc181f6193c6d50b7ef41304876f227313f465bf737023b812d30e9774e61",
+      "bytes": 7246476,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_cutoff4_height_x1p75.npz",
+      "source_full_field_sha256": "0dc1299853c03b519f50f1cda703c9adc828addf495159e9b55cbd67e8914339",
+      "reference_roughness_deg": 14.333610038724894
+    },
+    {
+      "path": "data/heightmaps/libo_x2p00.npz",
+      "height_scale": 2.0,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "130abe9d558d1b5f9974399c8d63389b91b873b3d0de944bad05ad71209a6512",
+      "bytes": 7244479,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_height_x2p00.npz",
+      "source_full_field_sha256": "c8c9ba9d365e525f3e11698ec294aa1091d4eb806f3bcdc1b2db9f4852187b23",
+      "reference_roughness_deg": 16.031499050975604
+    },
+    {
+      "path": "data/heightmaps/libo_x2p25.npz",
+      "height_scale": 2.25,
+      "shape": [
+        869,
+        1089
+      ],
+      "sha256": "ecdf93761926475e3ae5b1d9491211903893ad8e9ec7fd0255b55d2c3d5cef41",
+      "bytes": 7248245,
+      "origin_xy_m": [
+        -0.223,
+        -0.353
+      ],
+      "spacing_xy_m": [
+        0.0005,
+        0.0005
+      ],
+      "source_full_field_filename": "libo_cutoff4_height_x2p25.npz",
+      "source_full_field_sha256": "2b525563b30b8e59cc190e1edaef6d6d68313b5e668d7aa6d8bc281fd2a577bf",
+      "reference_roughness_deg": 17.644444725269032
+    }
+  ],
+  "gait_bank": {
+    "path": "src/terrain_roughness/gait_bank.npz",
+    "sha256": "dc07d6fbb511e420191bfc8fd05bfdbd77c4b85bf9e64cd22ef8c9c45edb8bef",
+    "source_geometry_filename": "pair_segment_geometry.npz",
+    "source_geometry_sha256": "5a9b4956266dbe704826826a161c9a0e93052ae8edffdd8a15e4b717002d3864"
+  }
+}

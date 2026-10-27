@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "records": [
+    {
+      "N": 11,
+      "wave": 3.0,
+      "batch": 4,
+      "repeats": 3,
+      "kernels_per_repeat": 1800,
+      "positions_per_kernel": 36300,
+      "height_scales": 9,
+      "times": {
+        "original": [
+          3.6506025999988196,
+          3.8363575999974273,
+          4.210010700000566
+        ],
+        "compiled": [
+          0.7764370999975654,
+          0.76592890000029,
+          0.7634092000007513
+        ]
+      },
+      "median_speedup": 5.008764651648442,
+      "max_per_kernel_difference_deg": 4.6395490471695666e-07,
+      "peak_total_allocated_mb": {
+        "original": 139.287109375,
+        "compiled": 108.94140625
+      }
+    },
+    {
+      "N": 19,
+      "wave": 3.0,
+      "batch": 12,
+      "repeats": 3,
+      "kernels_per_repeat": 1800,
+      "positions_per_kernel": 36300,
+      "height_scales": 9,
+      "times": {
+        "original": [
+          16.590584800000215,
+          16.29116570000042,
+          16.534318699999858
+        ],
+        "compiled": [
+          2.1725834000026225,
+          2.1533457000005,
+          2.41615610000008
+        ]
+      },
+      "median_speedup": 7.610441421940304,
+      "max_per_kernel_difference_deg": 4.206861632383152e-07,
+      "peak_total_allocated_mb": {
+        "original": 257.63330078125,
+        "compiled": 416.25390625
+      }
+    }
+  ],
+  "timing_scope": "Warm repeated full scan including output transfer to CPU; same process and GPU. Input field/common grid creation and compile excluded for both. Optimized configuration tensors stay on GPU.",
+  "order": "Original/compiled order alternated across repeats.",
+  "precision": "Float64 coordinates, heights, distances and reductions; float32 atan/square, as in the original implementation."
+}

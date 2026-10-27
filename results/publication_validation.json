@@ -1,0 +1,82 @@
+{
+  "publication_date": "2026-10-27",
+  "cpu_clean_editable": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 5
+  },
+  "cpu_clean_wheel": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 5
+  },
+  "cuda_with_full_regressions": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "reproduction": {
+    "conditions": 300,
+    "kernels": 54000,
+    "positions_per_kernel": 36300,
+    "nonflat_values_compared": 486000,
+    "max_per_kernel_difference_deg": 1.573496888340742e-11,
+    "max_final_difference_deg": 6.394884621840902e-14,
+    "compiled": false
+  },
+  "optional_compiler": {
+    "status": "not_successfully_run_for_publication",
+    "reason": "Windows Application Control blocked the freshly generated cuda_utils module. No policy or security setting was changed. Eager CUDA used for the complete re-evaluation."
+  },
+  "examples": {
+    "python_output_deg": 9.43447229,
+    "cli_output_deg": 9.43447229,
+    "backend": "CUDA; fresh CPU wheel flat-control CLI also verified."
+  },
+  "data_files_hash_verified": 12,
+  "plots": {
+    "script_ran": true,
+    "figures": 4,
+    "formats": [
+      "PNG",
+      "SVG"
+    ],
+    "visually_reviewed": true
+  },
+  "package": {
+    "wheel_asset_verified": true,
+    "external_research_directories_required": false
+  },
+  "tested_runtime": {
+    "python": "3.11.15",
+    "numpy": "1.26.0",
+    "torch_cuda": "2.7.0+cu128",
+    "torch_cpu_clean_environment": "2.7.0+cpu",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "cpu_example_screening": {
+    "initial_attempt": {
+      "status": "timed_out",
+      "limit_s": 180,
+      "configuration": "Default Torch thread count; whole real-terrain basic example."
+    },
+    "adjustment": "The example now explicitly selects one CPU thread, consistent with the CLI and analytic tests. This changes execution resources only."
+  },
+  "source_sha256": {
+    "src/terrain_roughness/cli.py": "93c27ea2e7d56718cb348b49eeafcc382cc2f0e31b13ebdaac72ce9ff1b69239",
+    "src/terrain_roughness/core.py": "e7822d3acc57e58dd33d3d7d22d490ae99083ff20fa53ed17735390ba180f697",
+    "src/terrain_roughness/__init__.py": "ca383fc77c4703e678284fb7386131d568400650a071a74b89d67d4187cf8a9c",
+    "studies/benchmark.py": "4c79771fea00bc559b71f613574adfe51fc614c8ac1a5931afd3c1885a867fa5",
+    "studies/plot_results.py": "238b88f0da6fb88756725c47a968961a1923e73fbf6ba928be9a64107b320d48",
+    "studies/reproduce_study.py": "6577ce86311991f7235a7a1e11555b561b68dc58d386d8d692c5deab40323703",
+    "studies/verify_data.py": "7198d8914907cc962ac42406a5f327b81b64869c3512603606cfefcf0937c2c1",
+    "tests/conftest.py": "b1f1a17e77ec17b144384297406bb08cd7bca00604e0947ec85fabe86097e42f",
+    "tests/test_data_and_regression.py": "5d648d2146bc7a7badef57811d8d8f1d1fb9a67371a6fbc9bac6b29e3c892628",
+    "tests/test_geometry_and_inputs.py": "3c0b3e138685b70026faae621945256788e17dd6d4a72a489836ca8bebd5e22c",
+    "tests/test_metric.py": "94ca9cc16490f5b29dc677931124c3223222a1c51d15749e94367dfa765bbb72",
+    "examples/basic_usage.py": "f52d6032100569a2c089dd83fa6fe554de1b6882d2bfdeff5853805cc994f737"
+  }
+}

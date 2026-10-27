@@ -1,0 +1,3 @@
+# Minimal runtime dependencies. Select the CPU/CUDA Torch wheel first.
+numpy>=1.24,<3
+torch>=2.7,<3

@@ -1,0 +1,2 @@
+# Optional compiler for the tested Torch 2.7 / CUDA 12.8 combination.
+triton-windows==3.3.1.post21; sys_platform == "win32"
