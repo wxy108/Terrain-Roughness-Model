@@ -148,11 +148,13 @@ For stance feet $`i,j`$, let $`d_{ij}`$ be their horizontal separation and $`\De
 The output is
 
 ```math
-\begin{aligned}
-R_g &= \frac{180}{\pi}
-\sqrt{\left\langle \frac{1}{M}\sum_{i<j}\beta_{ij}^{2} \right\rangle_{\mathbf{x},\phi,\theta}},\\
-M &= \frac{N(N-1)}{2}.
-\end{aligned}
+R_g=\frac{180}{\pi}\sqrt{\left\langle \frac{1}{M}\sum_{i \lt j}\beta_{ij}^{2} \right\rangle_{\mathbf{x},\phi,\theta}}.
+```
+
+The number of unordered stance-foot pairs is
+
+```math
+M=\frac{N(N-1)}{2}.
 ```
 
 Here $`N`$ is the number of stance feet, $`\mathbf{x}`$ is translation, $`\phi`$ is cycle phase and $`\theta`$ is heading. The square root follows all averaging. [The method document](docs/METHOD.md) defines interpolation, valid bounds, weighting and the convolution analogy in detail.

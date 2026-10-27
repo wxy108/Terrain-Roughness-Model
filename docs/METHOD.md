@@ -37,7 +37,7 @@ Let $`P=50`$, $`T=36`$ and $`L`$ be the common number of translation points. Let
 \begin{aligned}
 R_g &= \frac{180}{\pi}\sqrt{
 \frac{1}{PTL}\sum_{p=0}^{P-1}\sum_{q=0}^{T-1}\sum_{\ell=1}^{L}E_{p,q,\ell}},\\
-E_{p,q,\ell} &= \frac{1}{M}\sum_{\substack{i<j\\i,j\in S_{\phi_p}}}
+E_{p,q,\ell} &= \frac{1}{M}\sum_{\substack{i \lt j\\i,j\in S_{\phi_p}}}
 \beta_{ij}(\mathbf x_\ell,\phi_p,\theta_q)^2.
 \end{aligned}
 ```
@@ -53,7 +53,7 @@ A square cell has normalized coordinates $`(u,v)\in[0,1]^2`$. With vertex height
 h(u,v) &= h_{00}[1-\max(u,v)]+h_{11}\min(u,v)\\
 &\quad+\begin{cases}
 h_{10}(u-v),&u\geq v,\\
-h_{01}(v-u),&u<v.
+h_{01}(v-u),&u\lt v.
 \end{cases}
 \end{aligned}
 ```
