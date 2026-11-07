@@ -2,7 +2,7 @@
 
 Gait-conditioned terrain roughness from a physical height map and saved centipede contact geometry. The Python function returns the **complete-graph stance-foot pair-angle RMS in degrees**.
 
-[中文教程](docs/TUTORIAL_ZH.md) · [Mathematical method](docs/METHOD.md) · [Data provenance](data/manifest.json) · [Reference results](results/reference_50x36.csv) · [Validation record](docs/VALIDATION.md)
+[Code and algorithm guide](docs/CODE_GUIDE.md) · [中文教程](docs/TUTORIAL_ZH.md) · [Mathematical method](docs/METHOD.md) · [Data provenance](data/manifest.json) · [Reference results](results/reference_50x36.csv) · [Validation record](docs/VALIDATION.md)
 
 ```python
 from terrain_roughness import calculate_roughness
@@ -220,6 +220,8 @@ All 45 tested nonflat wave-number curves and all 54 segment-count curves decreas
 The neutral-configuration **reference terrain roughness** used as the x-axis of the earlier performance plot is a separate fixed-footprint calculation. It is retained in the reference CSV for context. The function in this repository returns **gait-conditioned pair-angle RMS**, not that neutral reference.
 
 ## Repository contents
+
+For a file-by-file module map, the core call flow, and the role of each algorithm step, see the [code and algorithm guide](docs/CODE_GUIDE.md).
 
 ```text
 src/terrain_roughness/     Python API, CLI and packaged gait bank
