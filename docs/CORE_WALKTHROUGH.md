@@ -543,18 +543,18 @@ This stage also validates saved-gait availability and geometric coverage. A cons
 | 202 | Sum all kernels and divide by `K*L`. Pair normalization `1/M` was already applied inside `forward()`. |
 | 203 | Take one square root, convert radians to degrees, transfer the scalar to CPU and return a Python `float`. |
 
-After line 201 has visited every position chunk:
+After line 201 has visited every position chunk, let $E_k$ denote `energy[k]`.
 
 ```math
-\operatorname{energy}[k]
+E_k
 =\frac{1}{M}\sum_{\ell=1}^{L}\sum_{i\lt j}\beta_{k\ell ij}^{2}.
 ```
 
-Line 202 therefore produces exactly the intended discrete normalization:
+Line 202 computes `mean_square`, denoted by $S$.
 
 ```math
-\operatorname{mean\_square}
-=\frac{1}{KL}\sum_{k=1}^{K}\operatorname{energy}[k]
+S
+=\frac{1}{KL}\sum_{k=1}^{K}E_k
 =\frac{1}{KLM}\sum_{k=1}^{K}\sum_{\ell=1}^{L}\sum_{i\lt j}\beta_{k\ell ij}^{2}.
 ```
 
