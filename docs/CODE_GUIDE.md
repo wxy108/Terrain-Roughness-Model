@@ -4,6 +4,8 @@ This guide maps the repository's code to the calculation it performs. Start here
 
 The public function is `calculate_roughness()`. Given a calibrated physical height map and one saved gait, it returns the **complete-graph stance-foot pair-angle RMS in degrees**. For the derivation, see [Mathematical method](METHOD.md); for installation and complete command examples, see the [README](../README.md).
 
+For original source lines, tensor dimensions, equations and small hand-check examples, see the [line-by-line core walkthrough](CORE_WALKTHROUGH.md).
+
 ## Recommended reading order
 
 1. [Minimal Python example](../examples/basic_usage.py): see the inputs and one function call.
